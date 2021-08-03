@@ -1,0 +1,87 @@
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+body {
+  margin: 0px;
+  height: 100vh;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Open Sans";
+}
+
+header {
+}
+
+.header-logo {
+}
+
+main {
+}
+
+.build {
+  display: grid;
+  grid-template-columns: repeat(2, 1gr);
+  justify-content: center;
+}
+
+.build-info {
+}
+
+.build-heading {
+  font-family: "Poppins";
+  font-size: ;
+  font-weight: 600;
+  color: var(--Very-Dark-Cyan);
+}
+
+.build-excerpt {
+  font-size: ;
+  font-weight: 700;
+  color: var(--Grayish-Blue);
+}
+
+.build-button {
+  background-color: var(--Pink);
+  color: var(--Very-Pale-Cyan);
+}
+
+.build-image {
+  width: 100%;
+  height: auto;
+}
+
+.properties {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.property {
+}
+
+.property-title {
+  font-weight: 600;
+  font-size: ;
+  font-family: "Poppins";
+  color: var(--Very-Dark-Cyan);
+}
+
+.property-excerpt {
+  font-size: ;
+  color: var(--Grayish-Blue);
+}
+
+.property-image {
+  width: 100%;
+  height: auto;
+}
+
+.ready {
+}
+
+.reading-heading {
+}
