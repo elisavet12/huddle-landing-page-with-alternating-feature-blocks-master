@@ -3,7 +3,6 @@
   --Very-Pale-Cyan: hsl(193, 100%, 96%);
   --Very-Dark-Cyan: hsl(192, 100%, 9%);
   --Grayish-Blue: hsl(208, 11%, 55%);
-  
 }
 
 body {
@@ -37,13 +36,17 @@ header {
   justify-self: end;
   border-style: none;
   display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 45px;
   padding: 18px 64px;
-  color: var(--Grayish-Blue);
+  color: var(--Very-Dark-Cyan);
   text-align: center;
-  
+  cursor: pointer;
+}
+
+.header-button:hover {
+  opacity: 0.5;
 }
 
 main {
@@ -56,16 +59,14 @@ main {
   justify-content: center;
   padding: 22px 80px 68px 80px;
   background-color: var(--Very-Pale-Cyan);
-  
 }
 
 .build-info {
-
 }
 
 .build-heading {
   font-family: "Poppins";
-  font-size: 42px ;
+  font-size: 42px;
   font-weight: 600;
   color: var(--Very-Dark-Cyan);
   margin-top: 100px;
@@ -90,19 +91,21 @@ main {
   font-size: 15px;
   font-weight: 600;
   padding: 20px 68px;
+  cursor: pointer;
+}
 
+.build-button:hover {
+  opacity: 0.5;
 }
 
 .build-image {
   width: 100%;
   height: auto;
   max-width: 100%;
-  
 }
 
 .properties {
   padding: 156px 100px 78px 100px;
-  
 }
 
 .property {
@@ -116,15 +119,6 @@ main {
   padding: 50px 30px 52px 116px;
   align-items: center;
   margin: 38px;
-  
-  
-  
-  
-}
-
-.property-info {
- 
-
 }
 
 .property-title {
@@ -135,14 +129,13 @@ main {
 }
 
 .property-excerpt {
-  font-size: 18px ;
+  font-size: 18px;
   color: var(--Grayish-Blue);
 }
 
 .property-image {
   width: 100%;
   height: auto;
-  
 }
 
 .ready {
@@ -150,28 +143,25 @@ main {
 }
 
 .ready-box {
-
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-   padding: 0px 320px;
-
+  padding: 0px 320px;
 }
 
 .box-info {
-border: 2px solid;
+  border: 2px solid;
   padding: 0px 132px;
   background-color: white;
-  box-shadow: 5px 10px 18px var(--Grayish-Blue);
-    border-style: none;
-    border-radius: 12px;
-    height: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- 
+  box-shadow: 5px 0px 18px var(--Grayish-Blue);
+  border-style: none;
+  border-radius: 12px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .ready-heading {
@@ -181,13 +171,18 @@ border: 2px solid;
 }
 
 .ready-button {
-font-size: 20px;
-color: white;
-background-color: var(--Pink);
-padding: 28px 53px;
-border-radius: 40px;
-height: 78px;
-border-style: none;
+  font-size: 20px;
+  color: white;
+  background-color: var(--Pink);
+  padding: 28px 53px;
+  border-radius: 40px;
+  height: 78px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.ready-button:hover {
+  opacity: 0.5;
 }
 
 footer {
@@ -198,15 +193,14 @@ footer {
 
 .logo {
   width: 240px;
-    filter: grayscale(1) brightness(10.5);
-    margin-bottom: 40px;
+  filter: grayscale(1) brightness(10.5);
+  margin-bottom: 40px;
 }
 
 .footer-properties {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 150px  ;
-
+  gap: 150px;
 }
 
 .footer-info {
@@ -216,11 +210,10 @@ footer {
 .footer-nav {
   font-size: 18px;
   display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 16px;
-    align-items: center;
-    text-align: left;
-  
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 16px;
+  align-items: center;
+  text-align: left;
 }
 
 .footer-link {
@@ -228,14 +221,17 @@ footer {
   color: white;
 }
 
+.footer-link:hover {
+  text-decoration: underline;
+}
+
 .contact {
   display: flex;
-    align-items: center;
+  align-items: center;
 }
 
 .icon {
   margin-right: 36px;
-  
 }
 
 .social-icon {
@@ -243,10 +239,7 @@ footer {
   height: 32px;
   fill: white;
   margin-right: 12px;
-  
 }
-
-
 
 .footer-copyright {
   display: flex;
@@ -254,16 +247,67 @@ footer {
   font-size: 13px;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1115px) {
   header {
+  }
+
+  header {
+    padding: 26px 18px;
+  }
+
+  .build {
+    padding: 26px 18px;
+  }
+
+  .build-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .build-heading {
+    font-size: 28px;
+    width: 20ch;
+    text-align: center;
+  }
+
+  .build-excerpt {
+    width: 36ch;
+    text-align: center;
   }
 
   .header-button {
     font-size: 12px;
-    width: 115px;
   }
 
   .build {
-    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
   }
+
+  .build-button {
+    margin-bottom: 65px;
+  }
+
+  .properties {
+    padding: 26px 18px;
+  }
+
+  .property {
+    grid-template-columns: 1fr;
+    padding: 62px 48px 44px 48px;
+    text-align: center;
+  }
+
+  .property-title {
+    font-size: 25px;
+    width: 18ch;
+  }
+
+  .property-excerpt {
+    font-size: 16px;
+  }
+
+  .ready-box {
+    padding: 26px 18px;
+  }
+}
