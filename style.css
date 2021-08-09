@@ -14,6 +14,7 @@ body {
   min-height: 100%;
   background-image: url(./images/bg-hero-desktop.svg);
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 header {
@@ -21,6 +22,7 @@ header {
   grid-template-columns: 1fr 1fr;
   padding: 48px 80px;
   background-color: var(--Very-Pale-Cyan);
+  align-items: center;
 }
 
 .header-logo {
@@ -59,9 +61,6 @@ main {
   justify-content: center;
   padding: 22px 80px 68px 80px;
   background-color: var(--Very-Pale-Cyan);
-}
-
-.build-info {
 }
 
 .build-heading {
@@ -113,8 +112,9 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   border: solid;
+  border-radius: 14px;
   justify-content: center;
-  box-shadow: 5px 10px 18px var(--Grayish-Blue);
+  box-shadow: 5px 0px 18px var(--Grayish-Blue);
   border-style: none;
   padding: 50px 30px 52px 116px;
   align-items: center;
@@ -154,7 +154,7 @@ main {
   border: 2px solid;
   padding: 0px 132px;
   background-color: white;
-  box-shadow: 5px 0px 18px var(--Grayish-Blue);
+  box-shadow: 0px 0px 18px var(--Grayish-Blue);
   border-style: none;
   border-radius: 12px;
   height: 280px;
@@ -249,9 +249,6 @@ footer {
 
 @media only screen and (max-width: 1115px) {
   header {
-  }
-
-  header {
     padding: 26px 18px;
   }
 
@@ -290,12 +287,16 @@ footer {
 
   .properties {
     padding: 26px 18px;
+    row-gap: 46px;
+    display: grid;
+    margin-bottom: 124px;
   }
 
   .property {
     grid-template-columns: 1fr;
     padding: 62px 48px 44px 48px;
     text-align: center;
+    margin: 0px;
   }
 
   .property-title {
@@ -309,5 +310,80 @@ footer {
 
   .ready-box {
     padding: 26px 18px;
+  }
+
+  .box-info {
+    padding: 0px;
+  }
+
+  .ready-heading {
+    font-size: 21px;
+    padding: 0px 30px;
+  }
+
+  .ready-button {
+    font-size: 12px;
+    height: 48px;
+    padding: 20px 60px;
+  }
+
+  footer {
+    padding: 26px 18px 62px 18px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .footer-properties {
+    grid-template-columns: 1fr;
+    gap: 80px;
+    margin-bottom: 32px;
+  }
+
+  .footer-contact {
+    font-size: 21px;
+  }
+
+  .footer-nav {
+    grid-template-columns: 1fr;
+    font-size: 21px;
+  }
+
+  .footer-social {
+    text-align: center;
+  }
+
+  .footer-copyright {
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 430px) {
+    .header-button {
+      padding: 18px 40px;
+    }
+
+    .build-excerpt {
+      width: 30ch;
+    }
+
+    .properties {
+      padding: 26px 9px;
+    }
+
+    .property {
+      grid-template-columns: 1fr;
+      padding: 62px 24px 44px 24px;
+      text-align: center;
+      margin: 0px;
+    }
+
+    .ready-box {
+      padding: 26px 9px;
+    }
+
+    .ready-heading {
+      width: 20ch;
+    }
   }
 }
